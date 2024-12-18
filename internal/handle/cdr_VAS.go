@@ -45,8 +45,7 @@ func Cdr_Vas(b *tele.Bot){
 
 		replyMarkup_1900_1800 := tele.ReplyMarkup{
 			InlineKeyboard: [][]tele.InlineButton{
-				{btn_1900, btn_1800,btn_VAS},
-				{helpers.Back_To_Main_Menu},
+				{btn_1900, btn_1800,btn_VAS},				{helpers.Back_To_Main_Menu},
 			},
 		}
 		return c.Send("Bạn muốn lấy CTC Digitel gọi dịch vụ 1800 hay 1900", &tele.SendOptions{
